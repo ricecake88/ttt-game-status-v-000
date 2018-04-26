@@ -56,7 +56,10 @@ def winner(board)
       board[position] == "X"
       return "X"
     end
-    return "O"
+    won?(board).all? do |position|
+      board[position] == "O"
+      return "O"
+    end
   end
 end
 
