@@ -56,6 +56,7 @@ def winner(board)
       board[position] == "X"
       return "X"
     end
+    return "O"
   end
 end
 
