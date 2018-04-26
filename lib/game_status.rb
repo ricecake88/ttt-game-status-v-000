@@ -52,9 +52,7 @@ end
 
 def winner(board)
   if won?(board)
-    combination = won?(board)
-    puts combination
-    combination.all? do |position|
+     won?(board).all? do |position|
       if board[position] == "X"
         return "X"
       else
