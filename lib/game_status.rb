@@ -51,6 +51,10 @@ def over?(board)
 end
 
 def winner(board)
+  if won?(board)
+    combination = won?(board)
+    puts combination
+  end
 end
 
   
