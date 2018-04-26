@@ -46,6 +46,14 @@ def draw?(board)
   end
 end
 
+def over?(board)
+  return won(board) || draw(board)
+end
+
+def winner(board)
+end
+
+  
 board = ["X", " ", " ", "X", " ", " ", "X", " ", " "]
 puts won?(board)
 
