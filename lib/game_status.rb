@@ -52,11 +52,9 @@ end
 
 def winner(board)
   if won?(board)
-    Xwins = won?(board).all? do |position|
+    won?(board).all? do |position|
       board[position] == "X"
       return "X"
-      
-  end
 end
 
   
