@@ -34,7 +34,15 @@ def won?(board)
   return false
 end
 
-def full?(board)
+def full?(board) 
+  board.each do |element|
+    if (element == "X" || element == "O")
+      return true
+    else
+      return false
+    end
+  end
+end
   
 board = ["X", " ", " ", "X", " ", " ", "X", " ", " "]
 puts won?(board)
