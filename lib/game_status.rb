@@ -52,12 +52,9 @@ end
 
 def winner(board)
   if won?(board)
-    Xwins = won?(board).all? do |position|
-      board[position] == "X"
-    end
-    won?(board).all? do |position|
-      board[position] == "O"
-    end
+    Xwins = won?(board).all? {|position| board[position] == "X"}
+    Owins = won?(board).all? {|position| board[position] == "O"}
+    if (Xwins) return "X" else return "O"
   end
 end
 
