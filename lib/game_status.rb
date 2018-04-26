@@ -38,6 +38,10 @@ def full?(board)
   board.all? {|element| element == "X" || element == "O"}
 end
   
+def draw?(board)
+  return full?(board) && !won(board)
+end
+
 board = ["X", " ", " ", "X", " ", " ", "X", " ", " "]
 puts won?(board)
 
